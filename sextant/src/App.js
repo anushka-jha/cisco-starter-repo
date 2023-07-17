@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Banner";
 import Exhibit from "./Exhibit";
 import AddressRequest from "./AddressRequest";
+import Pylon from "./Pylon";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </Exhibit>
       <Exhibit name="Public IPv6 Address">
         <AddressRequest url="https://api64.ipify.org?format=json" />
+      </Exhibit>
+      <Exhibit name="Pylon Packet Latency">
+        <Pylon />
       </Exhibit>
     </div>
   );
